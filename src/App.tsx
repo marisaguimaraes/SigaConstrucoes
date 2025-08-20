@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { 
   ShoppingCart, 
   Phone, 
@@ -39,7 +40,6 @@ function App() {
             <nav className="hidden md:flex space-x-8">
               <a href="#inicio" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Início</a>
               <a href="#produtos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Produtos</a>
-              <a href="#projetos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Projetos</a>
               <a href="#depoimentos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Depoimentos</a>
               <a href="#contato" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Contato</a>
             </nav>
@@ -62,7 +62,6 @@ function App() {
               <div className="flex flex-col space-y-4">
                 <a href="#inicio" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Início</a>
                 <a href="#produtos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Produtos</a>
-                <a href="#projetos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Projetos</a>
                 <a href="#depoimentos" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Depoimentos</a>
                 <a href="#contato" className="text-gray-700 hover:text-orange-600 transition-colors font-medium">Contato</a>
                 <button className="flex items-center space-x-2 transition-colors bg-orange-500 font-medium inline-flex items-center justify-center text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 h-10 px-6 py-2 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"><a href="https://wa.me/557436119193" className="flex items-center space-x-2 text-black transition-colors">
@@ -154,7 +153,7 @@ function App() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-xl bg-white shadow-lg group-hover:shadow-xl transition-all">
                 <img 
-                  src="https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg"
+                  src="assets/brick-piles-placed-factory-floor.jpg"
                   alt="Material de Construção"
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -175,7 +174,7 @@ function App() {
             <div className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-xl bg-white shadow-lg group-hover:shadow-xl transition-all">
                 <img 
-                  src="https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg"
+                  src="assets/set-tools-with-copy-space.jpg"
                   alt="Ferramentas"
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -211,57 +210,6 @@ function App() {
                     <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Projetos */}
-      <section id="projetos" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Projetos Realizados</h2>
-            <p className="text-xl text-gray-600">Veja alguns dos projetos que ajudamos a construir</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
-                alt="Casa Moderna"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-xl font-bold">Casa Moderna</h3>
-                <p className="text-sm opacity-90">Residencial Premium</p>
-              </div>
-            </div>
-            
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg"
-                alt="Apartamento Decorado"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-xl font-bold">Apartamento Decorado</h3>
-                <p className="text-sm opacity-90">Design Contemporâneo</p>
-              </div>
-            </div>
-            
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg"
-                alt="Reforma Comercial"
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition-all"></div>
-              <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-xl font-bold">Reforma Comercial</h3>
-                <p className="text-sm opacity-90">Escritório Moderno</p>
               </div>
             </div>
           </div>
@@ -403,7 +351,7 @@ function App() {
                 <div>
                   <label className="block text-sm font-medium mb-2">Nome Completo</label>
                   <input 
-                    type="text" 
+                    type="text"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition-colors"
                     placeholder="Digite seu nome"
                   />
@@ -412,7 +360,7 @@ function App() {
                 <div>
                   <label className="block text-sm font-medium mb-2">Telefone</label>
                   <input 
-                    type="tel" 
+                    type="tel"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition-colors"
                     placeholder="(11) 99999-9999"
                   />
@@ -421,7 +369,7 @@ function App() {
                 <div>
                   <label className="block text-sm font-medium mb-2">E-mail</label>
                   <input 
-                    type="email" 
+                    type="email"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:border-orange-600 outline-none transition-colors"
                     placeholder="seu@email.com"
                   />
@@ -436,8 +384,8 @@ function App() {
                   ></textarea>
                 </div>
                 
-                <button className="w-full bg-orange-600 text-white px-6 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center space-x-2">
-                  <span>Enviar Mensagem</span>
+                <button type="submit" className="w-full bg-orange-600 text-white px-6 py-4 rounded-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center space-x-2">
+                  <a href="https://wa.me/557436119193"><span>Enviar Mensagem</span></a>
                   <ArrowRight className="h-5 w-5" />
                 </button>
               </form>
@@ -453,21 +401,23 @@ function App() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Hammer className="h-8 w-8 text-orange-600" />
-                <span className="text-2xl font-bold">ConstructMax</span>
+                <span className="text-2xl font-bold">Siga Construções</span>
               </div>
               <p className="text-gray-300 mb-4">
                 Sua loja completa de material de construção e decoração. 
                 Qualidade e confiança há mais de 7 anos.
               </p>
               <div className="flex space-x-4">
+                
                 <div className="bg-orange-600 p-2 rounded-lg cursor-pointer hover:bg-orange-700 transition-colors">
-                  <Phone className="h-5 w-5" />
+                <a href="https://wa.me/557436119193"><Phone className="h-5 w-5" /></a>
+                </div>
+
+                <div className="bg-orange-600 p-2 rounded-lg cursor-pointer hover:bg-orange-700 transition-colors">
+                  <a href="mailto:sigaatacadista@gmail.com"><Mail className="h-5 w-5" /></a>
                 </div>
                 <div className="bg-orange-600 p-2 rounded-lg cursor-pointer hover:bg-orange-700 transition-colors">
-                  <Mail className="h-5 w-5" />
-                </div>
-                <div className="bg-orange-600 p-2 rounded-lg cursor-pointer hover:bg-orange-700 transition-colors">
-                  <MapPin className="h-5 w-5" />
+                  <a href="https://maps.app.goo.gl/kZyum1GGgGpvKEQ59"><MapPin className="h-5 w-5" /></a>
                 </div>
               </div>
             </div>
@@ -489,7 +439,6 @@ function App() {
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Entrega Expressa</a></li>
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Orçamento Grátis</a></li>
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Consultoria Técnica</a></li>
-                <li><a href="#" className="hover:text-orange-600 transition-colors">Projeto Personalizado</a></li>
               </ul>
             </div>
             
@@ -499,7 +448,6 @@ function App() {
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Sobre Nós</a></li>
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Política de Privacidade</a></li>
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Termos de Uso</a></li>
-                <li><a href="#" className="hover:text-orange-600 transition-colors">FAQ</a></li>
                 <li><a href="#" className="hover:text-orange-600 transition-colors">Trabalhe Conosco</a></li>
               </ul>
             </div>
